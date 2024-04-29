@@ -3,52 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		163D2A1A2BDAAEB100648227 /* ChamaAppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A192BDAAEB100648227 /* ChamaAppReducer.swift */; };
 		163D2A272BDBD2A400648227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163D2A262BDBD2A400648227 /* Assets.xcassets */; };
 		163D2A302BDBD75D00648227 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A2F2BDBD75D00648227 /* main.swift */; };
 		163D2A322BDBD77700648227 /* StartupAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A312BDBD77700648227 /* StartupAppDelegate.swift */; };
 		163D2A372BDBD89E00648227 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163D2A362BDBD89E00648227 /* ServiceManagement.framework */; };
-		163D2A3A2BDBD8EB00648227 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A392BDBD8EA00648227 /* SettingsView.swift */; };
-		163D2A3C2BDBD8EE00648227 /* SettingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A3B2BDBD8EE00648227 /* SettingsReducer.swift */; };
-		163D2A3F2BDBEC3900648227 /* AppStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A3E2BDBEC3900648227 /* AppStorageKey.swift */; };
 		163D2A412BDC056600648227 /* AutoStartup.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 163D2A202BDBD2A300648227 /* AutoStartup.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		163D2A442BDC36B600648227 /* LogsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A432BDC36B600648227 /* LogsReducer.swift */; };
-		163D2A4A2BDC73C500648227 /* LogDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A492BDC73C500648227 /* LogDataSource.swift */; };
-		163D2A692BDD4ED900648227 /* SystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A682BDD4ED900648227 /* SystemImage.swift */; };
-		163D2A6C2BDD554200648227 /* computer.json in Resources */ = {isa = PBXBuildFile; fileRef = 163D2A6A2BDD554200648227 /* computer.json */; };
-		163D2A6D2BDD554200648227 /* closingComputer.json in Resources */ = {isa = PBXBuildFile; fileRef = 163D2A6B2BDD554200648227 /* closingComputer.json */; };
-		1659D1F92BDDCE8D001152A7 /* OpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659D1F82BDDCE8D001152A7 /* OpenAIClient.swift */; };
-		1659D1FC2BDDCED8001152A7 /* ChatGPTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659D1FB2BDDCED8001152A7 /* ChatGPTResponse.swift */; };
-		1659D2042BDE62FB001152A7 /* Network+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659D2032BDE62FB001152A7 /* Network+Method.swift */; };
-		1659D2062BDE6335001152A7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659D2052BDE6335001152A7 /* Network.swift */; };
-		1659D2092BDE640F001152A7 /* BuildConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659D2082BDE640F001152A7 /* BuildConfiguration.swift */; };
-		1659D20B2BDE6DC5001152A7 /* ChatGPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659D20A2BDE6DC5001152A7 /* ChatGPTService.swift */; };
-		16B8E0C02BD2AFFE00CA951E /* ChamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0BF2BD2AFFE00CA951E /* ChamaApp.swift */; };
-		16B8E0C22BD2AFFE00CA951E /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0C12BD2AFFE00CA951E /* LogsView.swift */; };
-		16B8E0C42BD2AFFE00CA951E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0C32BD2AFFE00CA951E /* Log.swift */; };
-		16B8E0C62BD2B00000CA951E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B8E0C52BD2B00000CA951E /* Assets.xcassets */; };
-		16B8E0D12BD2DC5B00CA951E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0D02BD2DC5B00CA951E /* Date+Extension.swift */; };
-		16B8E0D42BD2DD6800CA951E /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0D32BD2DD6800CA951E /* DateFormatter+Extension.swift */; };
-		16B8E0D82BD2FE9600CA951E /* ScreenLockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0D72BD2FE9600CA951E /* ScreenLockObserver.swift */; };
+		16A8CFC42BDF1DCB00B6AC07 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */; };
+		16A8CFC72BDF1DEA00B6AC07 /* closingComputer.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */; };
+		16A8CFC82BDF1DEA00B6AC07 /* computer.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC62BDF1DEA00B6AC07 /* computer.json */; };
+		16A8CFCE2BDF1DFC00B6AC07 /* clockTime.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC92BDF1DFC00B6AC07 /* clockTime.json */; };
+		16A8CFCF2BDF1DFC00B6AC07 /* working.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFCA2BDF1DFC00B6AC07 /* working.json */; };
+		16A8CFD02BDF1DFC00B6AC07 /* night.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFCB2BDF1DFC00B6AC07 /* night.json */; };
+		16A8CFD12BDF1DFC00B6AC07 /* notFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFCC2BDF1DFC00B6AC07 /* notFound.json */; };
+		16A8CFD22BDF1DFC00B6AC07 /* hello.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFCD2BDF1DFC00B6AC07 /* hello.json */; };
+		16A8CFD62BDF1E3B00B6AC07 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFD52BDF1E3B00B6AC07 /* MainApp.swift */; };
+		16A8CFD92BDF1E9500B6AC07 /* MenuBarReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFD82BDF1E9500B6AC07 /* MenuBarReducer.swift */; };
+		16A8CFDB2BDF1F8A00B6AC07 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFDA2BDF1F8A00B6AC07 /* MenuBarView.swift */; };
+		16A8CFDF2BDF20BE00B6AC07 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 16A8CFDE2BDF20BE00B6AC07 /* Lottie */; };
+		16A8CFE32BDF225B00B6AC07 /* SettingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFE22BDF225B00B6AC07 /* SettingsReducer.swift */; };
+		16A8CFE52BDF228600B6AC07 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFE42BDF228600B6AC07 /* SettingsView.swift */; };
+		16A8CFE72BDF240B00B6AC07 /* LogsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFE62BDF240B00B6AC07 /* LogsReducer.swift */; };
+		16A8CFE92BDF241F00B6AC07 /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFE82BDF241F00B6AC07 /* LogsView.swift */; };
+		16A8CFED2BDF26BA00B6AC07 /* LottieAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFEC2BDF26BA00B6AC07 /* LottieAsset.swift */; };
+		16A8CFF02BDFB8C200B6AC07 /* LocalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFEF2BDFB8C200B6AC07 /* LocalNotificationService.swift */; };
+		16A8CFF22BDFB9E300B6AC07 /* ScreenStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF12BDFB9E300B6AC07 /* ScreenStatusService.swift */; };
+		16A8CFF42BDFC4E200B6AC07 /* MainAppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF32BDFC4E200B6AC07 /* MainAppReducer.swift */; };
+		16A8CFF62BDFD28600B6AC07 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF52BDFD28600B6AC07 /* LogService.swift */; };
+		16A8CFF92BDFD2FE00B6AC07 /* LogHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF82BDFD2FE00B6AC07 /* LogHistory.swift */; };
 		16B8E0DB2BD2FF6400CA951E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 16B8E0DA2BD2FF6400CA951E /* ComposableArchitecture */; };
-		16B8E0DE2BD2FF8E00CA951E /* AppMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0DD2BD2FF8E00CA951E /* AppMenuView.swift */; };
-		16B8E0E12BD2FFB300CA951E /* AppMenuReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0E02BD2FFB300CA951E /* AppMenuReducer.swift */; };
-		16B8E0E32BD33AE400CA951E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0E22BD33AE400CA951E /* Time.swift */; };
-		16B8E0E62BD36DDF00CA951E /* LocalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0E52BD36DDF00CA951E /* LocalNotificationService.swift */; };
-		16B8E0EA2BD4164600CA951E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 16B8E0E92BD4164600CA951E /* Lottie */; };
-		16B8E0F02BD41AC600CA951E /* working.json in Resources */ = {isa = PBXBuildFile; fileRef = 16B8E0EF2BD41AC600CA951E /* working.json */; };
-		16B8E0F32BD428D800CA951E /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0F22BD428D800CA951E /* NotificationType.swift */; };
-		16B8E0F72BD49AFC00CA951E /* LottieFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B8E0F62BD49AFC00CA951E /* LottieFiles.swift */; };
-		16B8E0F92BD49D1100CA951E /* hello.json in Resources */ = {isa = PBXBuildFile; fileRef = 16B8E0F82BD49D1100CA951E /* hello.json */; };
-		16B8E0FC2BD4A0E300CA951E /* night.json in Resources */ = {isa = PBXBuildFile; fileRef = 16B8E0FA2BD4A0E300CA951E /* night.json */; };
-		16B8E0FD2BD4A0E300CA951E /* notFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 16B8E0FB2BD4A0E300CA951E /* notFound.json */; };
-		16C1C9B82BD5EBFA00F153A4 /* LocalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1C9B72BD5EBFA00F153A4 /* LocalImage.swift */; };
-		16C1C9BC2BD5F1FE00F153A4 /* MenuBarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1C9BB2BD5F1FE00F153A4 /* MenuBarScene.swift */; };
-		16C1C9BE2BD5F44600F153A4 /* MenuBarReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C1C9BD2BD5F44600F153A4 /* MenuBarReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,51 +52,36 @@
 
 /* Begin PBXFileReference section */
 		161FA29F2BDEAE3200AB738A /* AppKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppKit; sourceTree = "<group>"; };
-		163D2A192BDAAEB100648227 /* ChamaAppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamaAppReducer.swift; sourceTree = "<group>"; };
 		163D2A202BDBD2A300648227 /* AutoStartup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoStartup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		163D2A262BDBD2A400648227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163D2A2B2BDBD2A400648227 /* AutoStartup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoStartup.entitlements; sourceTree = "<group>"; };
 		163D2A2F2BDBD75D00648227 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		163D2A312BDBD77700648227 /* StartupAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupAppDelegate.swift; sourceTree = "<group>"; };
 		163D2A362BDBD89E00648227 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
-		163D2A392BDBD8EA00648227 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		163D2A3B2BDBD8EE00648227 /* SettingsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsReducer.swift; sourceTree = "<group>"; };
-		163D2A3E2BDBEC3900648227 /* AppStorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageKey.swift; sourceTree = "<group>"; };
-		163D2A432BDC36B600648227 /* LogsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsReducer.swift; sourceTree = "<group>"; };
-		163D2A492BDC73C500648227 /* LogDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDataSource.swift; sourceTree = "<group>"; };
-		163D2A682BDD4ED900648227 /* SystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImage.swift; sourceTree = "<group>"; };
-		163D2A6A2BDD554200648227 /* computer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = computer.json; sourceTree = "<group>"; };
-		163D2A6B2BDD554200648227 /* closingComputer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = closingComputer.json; sourceTree = "<group>"; };
-		164E91A22BD9E4B3008F123F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1659D1F82BDDCE8D001152A7 /* OpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIClient.swift; sourceTree = "<group>"; };
-		1659D1FB2BDDCED8001152A7 /* ChatGPTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTResponse.swift; sourceTree = "<group>"; };
-		1659D2032BDE62FB001152A7 /* Network+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Method.swift"; sourceTree = "<group>"; };
-		1659D2052BDE6335001152A7 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1659D2072BDE6388001152A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		1659D2082BDE640F001152A7 /* BuildConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildConfiguration.swift; sourceTree = "<group>"; };
-		1659D20A2BDE6DC5001152A7 /* ChatGPTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTService.swift; sourceTree = "<group>"; };
+		16A8CFC12BDF1D9500B6AC07 /* chama.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = chama.entitlements; sourceTree = "<group>"; };
+		16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = closingComputer.json; sourceTree = "<group>"; };
+		16A8CFC62BDF1DEA00B6AC07 /* computer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = computer.json; sourceTree = "<group>"; };
+		16A8CFC92BDF1DFC00B6AC07 /* clockTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clockTime.json; sourceTree = "<group>"; };
+		16A8CFCA2BDF1DFC00B6AC07 /* working.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = working.json; sourceTree = "<group>"; };
+		16A8CFCB2BDF1DFC00B6AC07 /* night.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night.json; sourceTree = "<group>"; };
+		16A8CFCC2BDF1DFC00B6AC07 /* notFound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notFound.json; sourceTree = "<group>"; };
+		16A8CFCD2BDF1DFC00B6AC07 /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
+		16A8CFD52BDF1E3B00B6AC07 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		16A8CFD82BDF1E9500B6AC07 /* MenuBarReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarReducer.swift; sourceTree = "<group>"; };
+		16A8CFDA2BDF1F8A00B6AC07 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		16A8CFE22BDF225B00B6AC07 /* SettingsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsReducer.swift; sourceTree = "<group>"; };
+		16A8CFE42BDF228600B6AC07 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		16A8CFE62BDF240B00B6AC07 /* LogsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsReducer.swift; sourceTree = "<group>"; };
+		16A8CFE82BDF241F00B6AC07 /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
+		16A8CFEC2BDF26BA00B6AC07 /* LottieAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAsset.swift; sourceTree = "<group>"; };
+		16A8CFEF2BDFB8C200B6AC07 /* LocalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationService.swift; sourceTree = "<group>"; };
+		16A8CFF12BDFB9E300B6AC07 /* ScreenStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenStatusService.swift; sourceTree = "<group>"; };
+		16A8CFF32BDFC4E200B6AC07 /* MainAppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppReducer.swift; sourceTree = "<group>"; };
+		16A8CFF52BDFD28600B6AC07 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		16A8CFF82BDFD2FE00B6AC07 /* LogHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHistory.swift; sourceTree = "<group>"; };
 		16B8E0BC2BD2AFFE00CA951E /* Chama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chama.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		16B8E0BF2BD2AFFE00CA951E /* ChamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamaApp.swift; sourceTree = "<group>"; };
-		16B8E0C12BD2AFFE00CA951E /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
-		16B8E0C32BD2AFFE00CA951E /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		16B8E0C52BD2B00000CA951E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Chama/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		16B8E0CA2BD2B00000CA951E /* Chama.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chama.entitlements; sourceTree = "<group>"; };
-		16B8E0D02BD2DC5B00CA951E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		16B8E0D32BD2DD6800CA951E /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
-		16B8E0D72BD2FE9600CA951E /* ScreenLockObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLockObserver.swift; sourceTree = "<group>"; };
-		16B8E0DD2BD2FF8E00CA951E /* AppMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuView.swift; sourceTree = "<group>"; };
-		16B8E0E02BD2FFB300CA951E /* AppMenuReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuReducer.swift; sourceTree = "<group>"; };
-		16B8E0E22BD33AE400CA951E /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		16B8E0E52BD36DDF00CA951E /* LocalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationService.swift; sourceTree = "<group>"; };
-		16B8E0EF2BD41AC600CA951E /* working.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = working.json; sourceTree = "<group>"; };
-		16B8E0F22BD428D800CA951E /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
-		16B8E0F62BD49AFC00CA951E /* LottieFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieFiles.swift; sourceTree = "<group>"; };
-		16B8E0F82BD49D1100CA951E /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
-		16B8E0FA2BD4A0E300CA951E /* night.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night.json; sourceTree = "<group>"; };
-		16B8E0FB2BD4A0E300CA951E /* notFound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notFound.json; sourceTree = "<group>"; };
-		16C1C9B72BD5EBFA00F153A4 /* LocalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalImage.swift; sourceTree = "<group>"; };
-		16C1C9BB2BD5F1FE00F153A4 /* MenuBarScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarScene.swift; sourceTree = "<group>"; };
-		16C1C9BD2BD5F44600F153A4 /* MenuBarReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,22 +98,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B8E0DB2BD2FF6400CA951E /* ComposableArchitecture in Frameworks */,
-				16B8E0EA2BD4164600CA951E /* Lottie in Frameworks */,
+				16A8CFDF2BDF20BE00B6AC07 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		163D2A1B2BDAB3FC00648227 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				16C1C9BB2BD5F1FE00F153A4 /* MenuBarScene.swift */,
-				16C1C9BD2BD5F44600F153A4 /* MenuBarReducer.swift */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
 		163D2A212BDBD2A300648227 /* AutoStartup */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,84 +125,131 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		163D2A382BDBD8E000648227 /* Settings */ = {
+		16A8CFA22BDF1CD100B6AC07 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				163D2A392BDBD8EA00648227 /* SettingsView.swift */,
-				163D2A3B2BDBD8EE00648227 /* SettingsReducer.swift */,
+				16A8CFF72BDFD2F300B6AC07 /* Models */,
+				16A8CFEE2BDFB8B800B6AC07 /* Services */,
+				16A8CFEA2BDF26A100B6AC07 /* Utilities */,
+				16A8CFD32BDF1E1A00B6AC07 /* Features */,
+				16A8CFC02BDF1D6D00B6AC07 /* Resources */,
 			);
-			path = Settings;
+			path = App;
 			sourceTree = "<group>";
 		};
-		163D2A3D2BDBEC2A00648227 /* AppStorage */ = {
+		16A8CFC02BDF1D6D00B6AC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				163D2A3E2BDBEC3900648227 /* AppStorageKey.swift */,
+				16A8CFC22BDF1DAA00B6AC07 /* Lottie */,
+				16A8CFC12BDF1D9500B6AC07 /* chama.entitlements */,
+				16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */,
 			);
-			path = AppStorage;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		163D2A422BDC26B300648227 /* Log */ = {
+		16A8CFC22BDF1DAA00B6AC07 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				16B8E0C12BD2AFFE00CA951E /* LogsView.swift */,
-				16B8E0C32BD2AFFE00CA951E /* Log.swift */,
-				163D2A432BDC36B600648227 /* LogsReducer.swift */,
+				16A8CFC92BDF1DFC00B6AC07 /* clockTime.json */,
+				16A8CFCD2BDF1DFC00B6AC07 /* hello.json */,
+				16A8CFCB2BDF1DFC00B6AC07 /* night.json */,
+				16A8CFCC2BDF1DFC00B6AC07 /* notFound.json */,
+				16A8CFCA2BDF1DFC00B6AC07 /* working.json */,
+				16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */,
+				16A8CFC62BDF1DEA00B6AC07 /* computer.json */,
 			);
-			path = Log;
+			path = Lottie;
 			sourceTree = "<group>";
 		};
-		163D2A472BDC738900648227 /* Database */ = {
+		16A8CFD32BDF1E1A00B6AC07 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				163D2A482BDC739B00648227 /* Logs */,
+				16A8CFDC2BDF207A00B6AC07 /* Logs */,
+				16A8CFD42BDF1E1F00B6AC07 /* Main */,
+				16A8CFD72BDF1E7400B6AC07 /* MenuBar */,
+				16A8CFDD2BDF208100B6AC07 /* Settings */,
 			);
-			path = Database;
+			path = Features;
 			sourceTree = "<group>";
 		};
-		163D2A482BDC739B00648227 /* Logs */ = {
+		16A8CFD42BDF1E1F00B6AC07 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				163D2A492BDC73C500648227 /* LogDataSource.swift */,
+				16A8CFD52BDF1E3B00B6AC07 /* MainApp.swift */,
+				16A8CFF32BDFC4E200B6AC07 /* MainAppReducer.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		16A8CFD72BDF1E7400B6AC07 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				16A8CFD82BDF1E9500B6AC07 /* MenuBarReducer.swift */,
+				16A8CFDA2BDF1F8A00B6AC07 /* MenuBarView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		16A8CFDC2BDF207A00B6AC07 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				16A8CFE62BDF240B00B6AC07 /* LogsReducer.swift */,
+				16A8CFE82BDF241F00B6AC07 /* LogsView.swift */,
 			);
 			path = Logs;
 			sourceTree = "<group>";
 		};
-		1659D1FA2BDDCEC5001152A7 /* OpenAI */ = {
+		16A8CFDD2BDF208100B6AC07 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				1659D1FB2BDDCED8001152A7 /* ChatGPTResponse.swift */,
-				1659D20A2BDE6DC5001152A7 /* ChatGPTService.swift */,
+				16A8CFE22BDF225B00B6AC07 /* SettingsReducer.swift */,
+				16A8CFE42BDF228600B6AC07 /* SettingsView.swift */,
 			);
-			path = OpenAI;
+			path = Settings;
 			sourceTree = "<group>";
 		};
-		1659D2022BDDD02E001152A7 /* Network */ = {
+		16A8CFEA2BDF26A100B6AC07 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				1659D1F82BDDCE8D001152A7 /* OpenAIClient.swift */,
-				1659D2032BDE62FB001152A7 /* Network+Method.swift */,
-				1659D2052BDE6335001152A7 /* Network.swift */,
+				16A8CFEB2BDF26B100B6AC07 /* Assets */,
 			);
-			path = Network;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		16A8CFA22BDF1CD100B6AC07 /* App */ = {
+		16A8CFEB2BDF26B100B6AC07 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				16A8CFEC2BDF26BA00B6AC07 /* LottieAsset.swift */,
 			);
-			path = App;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		16A8CFEE2BDFB8B800B6AC07 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16A8CFEF2BDFB8C200B6AC07 /* LocalNotificationService.swift */,
+				16A8CFF12BDFB9E300B6AC07 /* ScreenStatusService.swift */,
+				16A8CFF52BDFD28600B6AC07 /* LogService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		16A8CFF72BDFD2F300B6AC07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16A8CFF82BDFD2FE00B6AC07 /* LogHistory.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		16B8E0B32BD2AFFE00CA951E = {
 			isa = PBXGroup;
 			children = (
-				16A8CFA22BDF1CD100B6AC07 /* App */,
 				161FA29F2BDEAE3200AB738A /* AppKit */,
-				16B8E0BE2BD2AFFE00CA951E /* Chama */,
+				16A8CFA22BDF1CD100B6AC07 /* App */,
 				163D2A212BDBD2A300648227 /* AutoStartup */,
-				16B8E0BD2BD2AFFE00CA951E /* Products */,
 				163D2A352BDBD89D00648227 /* Frameworks */,
+				16B8E0BD2BD2AFFE00CA951E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,115 +260,6 @@
 				163D2A202BDBD2A300648227 /* AutoStartup.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		16B8E0BE2BD2AFFE00CA951E /* Chama */ = {
-			isa = PBXGroup;
-			children = (
-				1659D2022BDDD02E001152A7 /* Network */,
-				16B8E0DC2BD2FF6F00CA951E /* Features */,
-				16B8E0EB2BD416C900CA951E /* Resources */,
-				16B8E0E42BD36DD300CA951E /* Services */,
-				16B8E0D22BD2DD5000CA951E /* Utilities */,
-			);
-			path = Chama;
-			sourceTree = "<group>";
-		};
-		16B8E0D22BD2DD5000CA951E /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				163D2A472BDC738900648227 /* Database */,
-				163D2A3D2BDBEC2A00648227 /* AppStorage */,
-				16B8E0F52BD49AEE00CA951E /* Assets */,
-				16B8E0D02BD2DC5B00CA951E /* Date+Extension.swift */,
-				16B8E0D32BD2DD6800CA951E /* DateFormatter+Extension.swift */,
-				16B8E0E22BD33AE400CA951E /* Time.swift */,
-				1659D2082BDE640F001152A7 /* BuildConfiguration.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		16B8E0DC2BD2FF6F00CA951E /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				16B8E0E72BD40D8400CA951E /* App */,
-				16B8E0DF2BD2FFA000CA951E /* AppMenu */,
-				163D2A422BDC26B300648227 /* Log */,
-				163D2A382BDBD8E000648227 /* Settings */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		16B8E0DF2BD2FFA000CA951E /* AppMenu */ = {
-			isa = PBXGroup;
-			children = (
-				163D2A1B2BDAB3FC00648227 /* Scene */,
-				16B8E0F12BD428B300CA951E /* Models */,
-				16B8E0DD2BD2FF8E00CA951E /* AppMenuView.swift */,
-				16B8E0E02BD2FFB300CA951E /* AppMenuReducer.swift */,
-			);
-			path = AppMenu;
-			sourceTree = "<group>";
-		};
-		16B8E0E42BD36DD300CA951E /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				1659D1FA2BDDCEC5001152A7 /* OpenAI */,
-				16B8E0D72BD2FE9600CA951E /* ScreenLockObserver.swift */,
-				16B8E0E52BD36DDF00CA951E /* LocalNotificationService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		16B8E0E72BD40D8400CA951E /* App */ = {
-			isa = PBXGroup;
-			children = (
-				16B8E0BF2BD2AFFE00CA951E /* ChamaApp.swift */,
-				163D2A192BDAAEB100648227 /* ChamaAppReducer.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		16B8E0EB2BD416C900CA951E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				16B8E0CA2BD2B00000CA951E /* Chama.entitlements */,
-				164E91A22BD9E4B3008F123F /* Info.plist */,
-				16B8E0C52BD2B00000CA951E /* Assets.xcassets */,
-				16B8E0EC2BD416EA00CA951E /* Lottie */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		16B8E0EC2BD416EA00CA951E /* Lottie */ = {
-			isa = PBXGroup;
-			children = (
-				163D2A6B2BDD554200648227 /* closingComputer.json */,
-				163D2A6A2BDD554200648227 /* computer.json */,
-				16B8E0FA2BD4A0E300CA951E /* night.json */,
-				16B8E0FB2BD4A0E300CA951E /* notFound.json */,
-				16B8E0F82BD49D1100CA951E /* hello.json */,
-				16B8E0EF2BD41AC600CA951E /* working.json */,
-			);
-			path = Lottie;
-			sourceTree = "<group>";
-		};
-		16B8E0F12BD428B300CA951E /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				16B8E0F22BD428D800CA951E /* NotificationType.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		16B8E0F52BD49AEE00CA951E /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				16B8E0F62BD49AFC00CA951E /* LottieFiles.swift */,
-				16C1C9B72BD5EBFA00F153A4 /* LocalImage.swift */,
-				163D2A682BDD4ED900648227 /* SystemImage.swift */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,7 +298,7 @@
 			name = Chama;
 			packageProductDependencies = (
 				16B8E0DA2BD2FF6400CA951E /* ComposableArchitecture */,
-				16B8E0E92BD4164600CA951E /* Lottie */,
+				16A8CFDE2BDF20BE00B6AC07 /* Lottie */,
 			);
 			productName = Chama;
 			productReference = 16B8E0BC2BD2AFFE00CA951E /* Chama.app */;
@@ -434,7 +334,6 @@
 			packageReferences = (
 				16B8E0D92BD2FF6400CA951E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				16B8E0E82BD4164600CA951E /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				161FA2952BDEACCE00AB738A /* XCLocalSwiftPackageReference "Macros" */,
 			);
 			productRefGroup = 16B8E0BD2BD2AFFE00CA951E /* Products */;
 			projectDirPath = "";
@@ -459,13 +358,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163D2A6C2BDD554200648227 /* computer.json in Resources */,
-				16B8E0FC2BD4A0E300CA951E /* night.json in Resources */,
-				16B8E0FD2BD4A0E300CA951E /* notFound.json in Resources */,
-				16B8E0F02BD41AC600CA951E /* working.json in Resources */,
-				16B8E0F92BD49D1100CA951E /* hello.json in Resources */,
-				163D2A6D2BDD554200648227 /* closingComputer.json in Resources */,
-				16B8E0C62BD2B00000CA951E /* Assets.xcassets in Resources */,
+				16A8CFD22BDF1DFC00B6AC07 /* hello.json in Resources */,
+				16A8CFC82BDF1DEA00B6AC07 /* computer.json in Resources */,
+				16A8CFC72BDF1DEA00B6AC07 /* closingComputer.json in Resources */,
+				16A8CFD02BDF1DFC00B6AC07 /* night.json in Resources */,
+				16A8CFC42BDF1DCB00B6AC07 /* Media.xcassets in Resources */,
+				16A8CFCF2BDF1DFC00B6AC07 /* working.json in Resources */,
+				16A8CFCE2BDF1DFC00B6AC07 /* clockTime.json in Resources */,
+				16A8CFD12BDF1DFC00B6AC07 /* notFound.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,34 +385,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16B8E0E62BD36DDF00CA951E /* LocalNotificationService.swift in Sources */,
-				16B8E0E12BD2FFB300CA951E /* AppMenuReducer.swift in Sources */,
-				16B8E0C22BD2AFFE00CA951E /* LogsView.swift in Sources */,
-				16B8E0D82BD2FE9600CA951E /* ScreenLockObserver.swift in Sources */,
-				16B8E0F72BD49AFC00CA951E /* LottieFiles.swift in Sources */,
-				163D2A3A2BDBD8EB00648227 /* SettingsView.swift in Sources */,
-				163D2A1A2BDAAEB100648227 /* ChamaAppReducer.swift in Sources */,
-				163D2A3C2BDBD8EE00648227 /* SettingsReducer.swift in Sources */,
-				1659D2092BDE640F001152A7 /* BuildConfiguration.swift in Sources */,
-				1659D2042BDE62FB001152A7 /* Network+Method.swift in Sources */,
-				16B8E0C42BD2AFFE00CA951E /* Log.swift in Sources */,
-				1659D20B2BDE6DC5001152A7 /* ChatGPTService.swift in Sources */,
-				16B8E0E32BD33AE400CA951E /* Time.swift in Sources */,
-				16B8E0D12BD2DC5B00CA951E /* Date+Extension.swift in Sources */,
-				16B8E0D42BD2DD6800CA951E /* DateFormatter+Extension.swift in Sources */,
-				163D2A692BDD4ED900648227 /* SystemImage.swift in Sources */,
-				16C1C9BC2BD5F1FE00F153A4 /* MenuBarScene.swift in Sources */,
-				16C1C9BE2BD5F44600F153A4 /* MenuBarReducer.swift in Sources */,
-				1659D2062BDE6335001152A7 /* Network.swift in Sources */,
-				163D2A4A2BDC73C500648227 /* LogDataSource.swift in Sources */,
-				16C1C9B82BD5EBFA00F153A4 /* LocalImage.swift in Sources */,
-				16B8E0DE2BD2FF8E00CA951E /* AppMenuView.swift in Sources */,
-				1659D1FC2BDDCED8001152A7 /* ChatGPTResponse.swift in Sources */,
-				16B8E0F32BD428D800CA951E /* NotificationType.swift in Sources */,
-				163D2A3F2BDBEC3900648227 /* AppStorageKey.swift in Sources */,
-				1659D1F92BDDCE8D001152A7 /* OpenAIClient.swift in Sources */,
-				16B8E0C02BD2AFFE00CA951E /* ChamaApp.swift in Sources */,
-				163D2A442BDC36B600648227 /* LogsReducer.swift in Sources */,
+				16A8CFE52BDF228600B6AC07 /* SettingsView.swift in Sources */,
+				16A8CFD62BDF1E3B00B6AC07 /* MainApp.swift in Sources */,
+				16A8CFF92BDFD2FE00B6AC07 /* LogHistory.swift in Sources */,
+				16A8CFDB2BDF1F8A00B6AC07 /* MenuBarView.swift in Sources */,
+				16A8CFE92BDF241F00B6AC07 /* LogsView.swift in Sources */,
+				16A8CFED2BDF26BA00B6AC07 /* LottieAsset.swift in Sources */,
+				16A8CFF02BDFB8C200B6AC07 /* LocalNotificationService.swift in Sources */,
+				16A8CFF42BDFC4E200B6AC07 /* MainAppReducer.swift in Sources */,
+				16A8CFE72BDF240B00B6AC07 /* LogsReducer.swift in Sources */,
+				16A8CFD92BDF1E9500B6AC07 /* MenuBarReducer.swift in Sources */,
+				16A8CFF22BDFB9E300B6AC07 /* ScreenStatusService.swift in Sources */,
+				16A8CFF62BDFD28600B6AC07 /* LogService.swift in Sources */,
+				16A8CFE32BDF225B00B6AC07 /* SettingsReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,7 +591,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Chama/Resources/Chama.entitlements;
+				CODE_SIGN_ENTITLEMENTS = App/Resources/Chama.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -716,7 +601,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Chama/Resources/Info.plist;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -737,7 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Chama/Resources/Chama.entitlements;
+				CODE_SIGN_ENTITLEMENTS = App/Resources/Chama.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -747,7 +632,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Chama/Resources/Info.plist;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -795,13 +680,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		161FA2952BDEACCE00AB738A /* XCLocalSwiftPackageReference "Macros" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = Macros;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		16B8E0D92BD2FF6400CA951E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -822,15 +700,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		16A8CFDE2BDF20BE00B6AC07 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16B8E0E82BD4164600CA951E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		16B8E0DA2BD2FF6400CA951E /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 16B8E0D92BD2FF6400CA951E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
-		};
-		16B8E0E92BD4164600CA951E /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 16B8E0E82BD4164600CA951E /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
