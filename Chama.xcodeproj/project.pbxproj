@@ -12,6 +12,7 @@
 		163D2A322BDBD77700648227 /* StartupAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D2A312BDBD77700648227 /* StartupAppDelegate.swift */; };
 		163D2A372BDBD89E00648227 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163D2A362BDBD89E00648227 /* ServiceManagement.framework */; };
 		163D2A412BDC056600648227 /* AutoStartup.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 163D2A202BDBD2A300648227 /* AutoStartup.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1645E17B2BE1C3E300B5EDFC /* Int+Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645E17A2BE1C3E300B5EDFC /* Int+Hour.swift */; };
 		16A8CFC42BDF1DCB00B6AC07 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */; };
 		16A8CFC72BDF1DEA00B6AC07 /* closingComputer.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */; };
 		16A8CFC82BDF1DEA00B6AC07 /* computer.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC62BDF1DEA00B6AC07 /* computer.json */; };
@@ -58,6 +59,7 @@
 		163D2A2F2BDBD75D00648227 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		163D2A312BDBD77700648227 /* StartupAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupAppDelegate.swift; sourceTree = "<group>"; };
 		163D2A362BDBD89E00648227 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		1645E17A2BE1C3E300B5EDFC /* Int+Hour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Hour.swift"; sourceTree = "<group>"; };
 		1659D2072BDE6388001152A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		16A8CFC12BDF1D9500B6AC07 /* chama.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = chama.entitlements; sourceTree = "<group>"; };
 		16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 				163D2A362BDBD89E00648227 /* ServiceManagement.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1645E1792BE1C3D700B5EDFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1645E17A2BE1C3E300B5EDFC /* Int+Hour.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		16A8CFA22BDF1CD100B6AC07 /* App */ = {
@@ -211,6 +221,7 @@
 		16A8CFEA2BDF26A100B6AC07 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1645E1792BE1C3D700B5EDFC /* Extensions */,
 				16A8CFEB2BDF26B100B6AC07 /* Assets */,
 			);
 			path = Utilities;
@@ -388,6 +399,7 @@
 				16A8CFE52BDF228600B6AC07 /* SettingsView.swift in Sources */,
 				16A8CFD62BDF1E3B00B6AC07 /* MainApp.swift in Sources */,
 				16A8CFF92BDFD2FE00B6AC07 /* LogHistory.swift in Sources */,
+				1645E17B2BE1C3E300B5EDFC /* Int+Hour.swift in Sources */,
 				16A8CFDB2BDF1F8A00B6AC07 /* MenuBarView.swift in Sources */,
 				16A8CFE92BDF241F00B6AC07 /* LogsView.swift in Sources */,
 				16A8CFED2BDF26BA00B6AC07 /* LottieAsset.swift in Sources */,

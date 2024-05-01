@@ -3,11 +3,18 @@ import Lottie
 import SwiftUI
 
 struct MenuBarScene: Scene {
+	var remainingTime: Int
+
+	init(remainingTime: Int) {
+		self.remainingTime = remainingTime
+//		print(remainingTime)
+	}
+
 	var body: some Scene {
-		MenuBarExtra("x hour(s) left") {
+		MenuBarExtra("\(remainingTime.toHour()) hour(s) left") {
 			MenuBarView(
 				store: .init(
-					initialState: MenuBarReducer.State(),
+					initialState: MenuBarReducer.State(remainingTime: remainingTime), // TODO: FIX
 					reducer: { MenuBarReducer() }
 				)
 			)
@@ -21,7 +28,7 @@ struct MenuBarView: View {
 
 	var body: some View {
 		VStack(alignment: .leading, spacing: .zero) {
-			Text("8:22 left")
+			Text("\(store.remainingTime.toTimer()) left")
 				.font(.system(.largeTitle))
 
 			LottieView(animation: .named(store.animation))
@@ -40,7 +47,7 @@ struct MenuBarView: View {
 #Preview {
 	MenuBarView(
 		store: .init(
-			initialState: MenuBarReducer.State(),
+			initialState: MenuBarReducer.State(remainingTime: 3600),
 			reducer: { MenuBarReducer() }
 		)
 	)

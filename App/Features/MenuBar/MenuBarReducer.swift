@@ -5,8 +5,14 @@ import ComposableArchitecture
 struct MenuBarReducer {
 	@ObservableState
 	struct State {
+		var remainingTime: Int
 		var animation: LottieAsset = .hello
 		var loopMode: LottieLoopMode = .playOnce
+
+		init(remainingTime: Int) {
+			self.remainingTime = remainingTime
+			print(remainingTime)
+		}
 	}
 
 	enum Action {

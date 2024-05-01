@@ -5,7 +5,7 @@ import SwiftData
 
 @main
 struct MainApp: App {
-	var store: StoreOf<MainAppReducer>
+	@Bindable var store: StoreOf<MainAppReducer>
 
 	init() {
 		store = .init(initialState: MainAppReducer.State(), reducer: { MainAppReducer() })
@@ -14,24 +14,14 @@ struct MainApp: App {
 
 	var body: some Scene {
 		WindowGroup {
-			LogsView(
-				store: .init(
-					initialState: LogsReducer.State(),
-					reducer: { LogsReducer() }
-				)
-			)
+			LogsView(store: store.scope(state: \.logs, action: \.logs))
 		}
 		.modelContainer(for: Log.self)
 
-		MenuBarScene()
+		MenuBarScene(remainingTime: store.remainingTime)
 
 		Settings {
-			SettingsView(
-				store: .init(
-					initialState: SettingsReducer.State(),
-					reducer: { SettingsReducer() }
-				)
-			)
+			SettingsView(store: store.scope(state: \.settings, action: \.settings))
 		}
 	}
 }
