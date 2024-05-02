@@ -18,7 +18,7 @@ struct MainApp: App {
 		}
 		.modelContainer(for: Log.self)
 
-		MenuBarScene(remainingTime: store.remainingTime)
+		MenuBarScene(store: store.scope(state: \.menuBar, action: \.menuBar))
 
 		Settings {
 			SettingsView(store: store.scope(state: \.settings, action: \.settings))

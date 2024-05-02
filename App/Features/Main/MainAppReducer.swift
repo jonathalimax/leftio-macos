@@ -1,31 +1,29 @@
 import ComposableArchitecture
+import Foundation
 
 @Reducer
 struct MainAppReducer {
 	@Dependency(\.date) private var date
+	@Dependency(\.calendar) private var calendar
 	@Dependency(\.mainQueue) var mainQueue
 	@Dependency(\.logService) private var logService
 	@Dependency(\.screenStatusService) var screenStatusService
 
 	@ObservableState
 	struct State {
+		@Shared(.appStorage(.lastLogTimestamp)) var lastLogTimestamp: String?
+		@Shared(.appStorage(.workingHours)) var workingHours: Int = .defaultWorkingHour
+		@Shared var remainingTime: Int
 		var elapsedTime: Int = .zero
-		var workingHours: Int
-		var remainingTime: Int
 
 		// MARK: Child states
-		var logs: LogsReducer.State
-		var settings: SettingsReducer.State
+		var logs: LogsReducer.State = .init()
+		var menuBar: MenuBarSceneReducer.State
+		var settings: SettingsReducer.State = .init()
 
-		init(
-			workingHours: Int =  8 * 3600, // TODO: Improve it
-			logs: LogsReducer.State = .init(),
-			settings: SettingsReducer.State = .init()
-		) {
-			self.workingHours = workingHours
-			self.remainingTime = workingHours
-			self.logs = logs
-			self.settings = settings
+		init() {
+			self._remainingTime = Shared(.defaultWorkingHour)
+			self.menuBar = .init(remainingTime: Shared(.defaultWorkingHour))
 		}
 	}
 
@@ -37,6 +35,7 @@ struct MainAppReducer {
 
 		// MARK: Child actions
 		case logs(LogsReducer.Action)
+		case menuBar(MenuBarSceneReducer.Action)
 		case settings(SettingsReducer.Action)
 	}
 
@@ -47,34 +46,48 @@ struct MainAppReducer {
 	var body: some ReducerOf<Self> {
 		BindingReducer()
 		Scope(state: \.logs, action: \.logs) { LogsReducer() }
+		Scope(state: \.menuBar, action: \.menuBar) { MenuBarSceneReducer() }
 		Scope(state: \.settings, action: \.settings) { SettingsReducer() }
 
 		Reduce { state, action in
 			switch action {
 			case .initialized:
-				return .merge(
-					persistLog(.start),
-					listenScreenStatus(),
-					fireTimer()
-				)
+				return initialize(&state)
 
 			case .screenStatusChanged(.locked):
-				return persistLog(.break)
+				return .merge(
+					persistLog(.break),
+					.cancel(id: Cancellables.timer)
+				)
 
 			case .screenStatusChanged(.unlocked):
-				return persistLog(.restart)
+				return .merge(
+					persistLog(.restart),
+					fireTimer(&state)
+				)
 
 			case .timerTicked:
 				return onTimerTick(&state)
 
-			case .logs, .settings, .binding:
+			case .binding, .logs, .menuBar, .settings:
 				return .none
 			}
 		}
+		._printChanges()
+	}
+
+	private func initialize(_ state: inout State) -> EffectOf<Self> {
+		state.menuBar = .init(remainingTime: state.$remainingTime)
+
+		return .merge(
+			persistLog(.start),
+			listenScreenStatus(),
+			fireTimer(&state)
+		)
 	}
 
 	private func persistLog(_ action: Log.Action) -> EffectOf<Self> {
-		.run { _ in try logService.persist(.init(action: action, timestamp: date.now)) }
+		.run { send in try logService.persist(.init(action: action, timestamp: date.now)) }
 	}
 
 	private func listenScreenStatus() -> EffectOf<Self> {
@@ -85,8 +98,14 @@ struct MainAppReducer {
 		}
 	}
 
-	private func fireTimer() -> EffectOf<Self> {
-		.run { send in
+	private func fireTimer(_ state: inout State) -> EffectOf<Self> {
+		if isStartingNewDay(state.lastLogTimestamp) {
+			return startNewDay(&state)
+		}
+
+		state.lastLogTimestamp = date.now.formatted(.standard)
+
+		return .run { send in
 			for try await _ in mainQueue.timer(interval: .seconds(1)) {
 				await send(.timerTicked)
 			}
@@ -98,11 +117,32 @@ struct MainAppReducer {
 		state.elapsedTime += 1
 		state.remainingTime = state.workingHours - state.elapsedTime
 
+		if isStartingNewDay(state.lastLogTimestamp) {
+			return startNewDay(&state)
+		}
+
 		guard state.remainingTime > .zero else {
 			return .cancel(id: Cancellables.timer)
 		}
 
 		return .none
 	}
+
+	private func isStartingNewDay(_ lastLogTimestamp: String?) -> Bool {
+		guard let lastLogTimestamp, let lastLogDate = DateFormatter.standard.date(from: lastLogTimestamp) else {
+			return false
+		}
+
+		return calendar.compare(date.now, to: lastLogDate, toGranularity: .day) == .orderedDescending
+	}
+
+	private func startNewDay(_ state: inout State) -> EffectOf<Self> {
+		state.lastLogTimestamp = date.now.formatted(.standard)
+		state = .init()
+		return initialize(&state)
+	}
 }
 
+private extension Int {
+	static let defaultWorkingHour: Self = Time.convert(.hour(8), to: .second)
+}

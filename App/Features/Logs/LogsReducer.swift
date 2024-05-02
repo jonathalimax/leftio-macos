@@ -8,9 +8,7 @@ struct LogsReducer {
 	enum Action {}
 
 	var body: some ReducerOf<Self> {
-		Reduce { state, action in
-			return .none
-		}
+		EmptyReducer()
 	}
 }
 

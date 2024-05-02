@@ -2,53 +2,51 @@ import ComposableArchitecture
 import Lottie
 import SwiftUI
 
-struct MenuBarScene: Scene {
-	var remainingTime: Int
-
-	init(remainingTime: Int) {
-		self.remainingTime = remainingTime
-//		print(remainingTime)
-	}
-
-	var body: some Scene {
-		MenuBarExtra("\(remainingTime.toHour()) hour(s) left") {
-			MenuBarView(
-				store: .init(
-					initialState: MenuBarReducer.State(remainingTime: remainingTime), // TODO: FIX
-					reducer: { MenuBarReducer() }
-				)
-			)
-		}
-		.menuBarExtraStyle(.window)
-	}
-}
-
 struct MenuBarView: View {
 	let store: StoreOf<MenuBarReducer>
 
 	var body: some View {
 		VStack(alignment: .leading, spacing: .zero) {
-			Text("\(store.remainingTime.toTimer()) left")
-				.font(.system(.largeTitle))
+			HStack {
+				Text("Hours left \(store.remainingTime.toTimer())")
+					.font(.system(.largeTitle))
+
+				Spacer()
+
+				SettingsLink {
+					Image(systemName: "gear")
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.padding(4)
+						.frame(width: 28, height: 28)
+				}
+
+				Button(action: {}) {
+					Image(systemName: "list.clipboard")
+						.resizable()
+						.aspectRatio(contentMode: .fit)
+						.padding(4)
+						.frame(width: 28, height: 28)
+				}
+			}
 
 			LottieView(animation: .named(store.animation))
 				.playing(loopMode: store.loopMode)
 				.animationDidFinish { _ in store.send(.animationFinished) }
-				.frame(width: 300, height: 300)
+				.resizable()
 				.aspectRatio(contentMode: .fit)
+				.frame(maxWidth: .infinity)
 		}
 		.padding([.horizontal, .top])
-		.onAppear {
-			store.send(.onAppear)
-		}
 	}
 }
 
 #Preview {
 	MenuBarView(
 		store: .init(
-			initialState: MenuBarReducer.State(remainingTime: 3600),
+			initialState: MenuBarReducer.State(remainingTime: Shared(3600)),
 			reducer: { MenuBarReducer() }
 		)
 	)
+	.frame(width: 380)
 }
