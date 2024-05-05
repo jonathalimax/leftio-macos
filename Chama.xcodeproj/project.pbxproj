@@ -19,6 +19,7 @@
 		1671AC6E2BE1F3300061A91C /* EquatableAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671AC6D2BE1F3300061A91C /* EquatableAction.swift */; };
 		1671AC712BE2A7320061A91C /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671AC702BE2A7320061A91C /* MenuBarView.swift */; };
 		1671AC732BE2A73A0061A91C /* MenuBarReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671AC722BE2A73A0061A91C /* MenuBarReducer.swift */; };
+		16A86E522BE6B2F000F697CE /* AutoStartupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A86E512BE6B2F000F697CE /* AutoStartupService.swift */; };
 		16A8CFC42BDF1DCB00B6AC07 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */; };
 		16A8CFC72BDF1DEA00B6AC07 /* closingComputer.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */; };
 		16A8CFC82BDF1DEA00B6AC07 /* computer.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC62BDF1DEA00B6AC07 /* computer.json */; };
@@ -73,6 +74,7 @@
 		1671AC6D2BE1F3300061A91C /* EquatableAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableAction.swift; sourceTree = "<group>"; };
 		1671AC702BE2A7320061A91C /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		1671AC722BE2A73A0061A91C /* MenuBarReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarReducer.swift; sourceTree = "<group>"; };
+		16A86E512BE6B2F000F697CE /* AutoStartupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoStartupService.swift; sourceTree = "<group>"; };
 		16A8CFC12BDF1D9500B6AC07 /* chama.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = chama.entitlements; sourceTree = "<group>"; };
 		16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = closingComputer.json; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				16A8CFEF2BDFB8C200B6AC07 /* LocalNotificationService.swift */,
 				16A8CFF12BDFB9E300B6AC07 /* ScreenStatusService.swift */,
 				16A8CFF52BDFD28600B6AC07 /* LogService.swift */,
+				16A86E512BE6B2F000F697CE /* AutoStartupService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				1671AC712BE2A7320061A91C /* MenuBarView.swift in Sources */,
 				16A8CFD62BDF1E3B00B6AC07 /* MainApp.swift in Sources */,
 				16A8CFF92BDFD2FE00B6AC07 /* LogHistory.swift in Sources */,
+				16A86E522BE6B2F000F697CE /* AutoStartupService.swift in Sources */,
 				1645E17B2BE1C3E300B5EDFC /* Int+Time.swift in Sources */,
 				166E251B2BE3112C00053336 /* DateFormatter.swift in Sources */,
 				166E25172BE30A6000053336 /* StorageKey.swift in Sources */,
@@ -655,6 +659,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSBackgroundOnly = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -686,6 +691,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSBackgroundOnly = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

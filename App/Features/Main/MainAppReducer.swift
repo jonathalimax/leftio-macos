@@ -7,11 +7,13 @@ struct MainAppReducer {
 	@Dependency(\.calendar) private var calendar
 	@Dependency(\.mainQueue) var mainQueue
 	@Dependency(\.logService) private var logService
+	@Dependency(\.autoStartupService) var autoStartupService
 	@Dependency(\.screenStatusService) var screenStatusService
 
 	@ObservableState
 	struct State {
 		@Shared(.appStorage(.lastLogTimestamp)) var lastLogTimestamp: String?
+		@Shared(.appStorage(.launchAtStartup)) var launchAtStartup: Bool?
 		@Shared(.appStorage(.workingHours)) var workingHours: Int = .defaultWorkingHour
 		@Shared var remainingTime: Int
 		var elapsedTime: Int = .zero
@@ -73,7 +75,6 @@ struct MainAppReducer {
 				return .none
 			}
 		}
-		._printChanges()
 	}
 
 	private func initialize(_ state: inout State) -> EffectOf<Self> {
@@ -82,7 +83,8 @@ struct MainAppReducer {
 		return .merge(
 			persistLog(.start),
 			listenScreenStatus(),
-			fireTimer(&state)
+			fireTimer(&state),
+			enableAutoStartup(state)
 		)
 	}
 
@@ -140,6 +142,14 @@ struct MainAppReducer {
 		state.lastLogTimestamp = date.now.formatted(.standard)
 		state = .init()
 		return initialize(&state)
+	}
+
+	private func enableAutoStartup(_ state: State) -> EffectOf<Self> {
+		.run { [launchAtStartup = state.launchAtStartup] _ in
+			if launchAtStartup == nil, autoStartupService.status() == .notRegistered {
+				try? autoStartupService.turnOn()
+			}
+		}
 	}
 }
 

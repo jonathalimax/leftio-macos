@@ -2,21 +2,34 @@ import ComposableArchitecture
 import SwiftUI
 
 struct SettingsView: View {
+	@Environment(\.openURL) var openURL
 	@Bindable var store: StoreOf<SettingsReducer>
 
 	var body: some View {
 		List {
 			Section("Working time") {
-				Slider(value: $store.selectedWorkingTime, in: 1...12) {
-					Text("Working time \(Int(store.selectedWorkingTime))")
+				Slider(value: workingTimeBinding, in: store.workingTimeRange) {
+					Text("Working time \(Int(store.WorkingTimeHour))")
 				}
 
-				Toggle(isOn: .constant(true)) {
+				Toggle(isOn: $store.launchAtStartup) {
 					Text("Launch at login")
 				}
 				.toggleStyle(.switch)
 			}
 		}
+		.onAppear {
+			store.send(.onAppear)
+		}
+	}
+}
+
+private extension SettingsView {
+	var workingTimeBinding: Binding<Double> {
+		Binding(
+			get: { Double(store.WorkingTimeHour) },
+			set: { store.send(.setWorkingTime(Int($0))) }
+		)
 	}
 }
 

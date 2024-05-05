@@ -32,3 +32,19 @@ enum Time {
 		}
 	}
 }
+
+extension Int {
+	func converted(from source: Time.Result, to result: Time.Result) -> Int {
+		switch (source, result) {
+		case (.hour, .hour): self
+		case (.hour, .minute): self * 60
+		case (.hour, .second): self * 3600
+		case (.minute, .hour): self / 60
+		case (.minute, .minute): self
+		case (.minute, .second): self * 60
+		case (.second, .hour): self / 3600
+		case (.second, .minute): self / 60
+		case (.second, .second): self
+		}
+	}
+}
