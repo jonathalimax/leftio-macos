@@ -43,6 +43,7 @@
 		16A8CFF62BDFD28600B6AC07 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF52BDFD28600B6AC07 /* LogService.swift */; };
 		16A8CFF92BDFD2FE00B6AC07 /* LogHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF82BDFD2FE00B6AC07 /* LogHistory.swift */; };
 		16B8E0DB2BD2FF6400CA951E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 16B8E0DA2BD2FF6400CA951E /* ComposableArchitecture */; };
+		16EA12732BE7E6C3004030A3 /* ReminderReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA12722BE7E6C3004030A3 /* ReminderReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +99,7 @@
 		16A8CFF52BDFD28600B6AC07 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
 		16A8CFF82BDFD2FE00B6AC07 /* LogHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHistory.swift; sourceTree = "<group>"; };
 		16B8E0BC2BD2AFFE00CA951E /* Chama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16EA12722BE7E6C3004030A3 /* ReminderReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				16A8CFDC2BDF207A00B6AC07 /* Logs */,
 				16A8CFD42BDF1E1F00B6AC07 /* Main */,
 				16A8CFD72BDF1E7400B6AC07 /* MenuBar */,
+				16EA12712BE7E69A004030A3 /* Reminder */,
 				16A8CFDD2BDF208100B6AC07 /* Settings */,
 			);
 			path = Features;
@@ -308,6 +311,14 @@
 				163D2A202BDBD2A300648227 /* AutoStartup.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		16EA12712BE7E69A004030A3 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				16EA12722BE7E6C3004030A3 /* ReminderReducer.swift */,
+			);
+			path = Reminder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +456,7 @@
 				16A8CFDB2BDF1F8A00B6AC07 /* MenuBarScene.swift in Sources */,
 				16A8CFE92BDF241F00B6AC07 /* LogsView.swift in Sources */,
 				16A8CFED2BDF26BA00B6AC07 /* LottieAsset.swift in Sources */,
+				16EA12732BE7E6C3004030A3 /* ReminderReducer.swift in Sources */,
 				16A8CFF02BDFB8C200B6AC07 /* LocalNotificationService.swift in Sources */,
 				16A8CFF42BDFC4E200B6AC07 /* MainAppReducer.swift in Sources */,
 				16A8CFE72BDF240B00B6AC07 /* LogsReducer.swift in Sources */,

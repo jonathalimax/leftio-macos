@@ -22,6 +22,7 @@ struct MainAppReducer {
 		var logs: LogsReducer.State = .init()
 		var menuBar: MenuBarSceneReducer.State
 		var settings: SettingsReducer.State = .init()
+		var reminder: ReminderReducer.State = .init()
 
 		init() {
 			self._remainingTime = Shared(.defaultWorkingHour)
@@ -39,6 +40,7 @@ struct MainAppReducer {
 		case logs(LogsReducer.Action)
 		case menuBar(MenuBarSceneReducer.Action)
 		case settings(SettingsReducer.Action)
+		case reminder(ReminderReducer.Action)
 	}
 
 	enum Cancellables {
@@ -50,6 +52,7 @@ struct MainAppReducer {
 		Scope(state: \.logs, action: \.logs) { LogsReducer() }
 		Scope(state: \.menuBar, action: \.menuBar) { MenuBarSceneReducer() }
 		Scope(state: \.settings, action: \.settings) { SettingsReducer() }
+		Scope(state: \.reminder, action: \.reminder) { ReminderReducer() }
 
 		Reduce { state, action in
 			switch action {
@@ -71,7 +74,7 @@ struct MainAppReducer {
 			case .timerTicked:
 				return onTimerTick(&state)
 
-			case .binding, .logs, .menuBar, .settings:
+			case .binding, .logs, .menuBar, .settings, .reminder:
 				return .none
 			}
 		}
@@ -109,7 +112,7 @@ struct MainAppReducer {
 
 		return .run { send in
 			for try await _ in mainQueue.timer(interval: .seconds(1)) {
-				await send(.timerTicked)
+				await send(.timerTicked, animation: .default)
 			}
 		}
 		.cancellable(id: Cancellables.timer)
@@ -127,7 +130,9 @@ struct MainAppReducer {
 			return .cancel(id: Cancellables.timer)
 		}
 
-		return .none
+		return .run { [remainingTime = state.remainingTime] send in
+			await send(.reminder(.createReminder(remainingTime: remainingTime)))
+		}
 	}
 
 	private func isStartingNewDay(_ lastLogTimestamp: String?) -> Bool {
@@ -154,5 +159,5 @@ struct MainAppReducer {
 }
 
 private extension Int {
-	static let defaultWorkingHour: Self = Time.convert(.hour(8), to: .second)
+	static let defaultWorkingHour: Self = 8.converted(from: .hour, to: .second)
 }

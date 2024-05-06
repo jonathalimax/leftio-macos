@@ -8,7 +8,8 @@ struct MenuBarView: View {
 	var body: some View {
 		VStack(alignment: .leading, spacing: .zero) {
 			HStack {
-				Text("Hours left \(store.remainingTime.toTimer())")
+				Text(store.remainingTime.toTimer(.hour, .minute, .second))
+					.contentTransition(.numericText(countsDown: true))
 					.font(.system(.largeTitle))
 
 				Spacer()
