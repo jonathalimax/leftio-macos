@@ -1,6 +1,7 @@
 import ComposableArchitecture
 import SwiftUI
 
+@ViewAction(for: LogsReducer.self)
 struct LogsView: View {
 	let store: StoreOf<LogsReducer>
 
@@ -9,6 +10,9 @@ struct LogsView: View {
 			sidebar: { Text("sidebar") },
 			detail: { Text("detail") }
 		)
+		.onAppear {
+			send(.onAppear)
+		}
 	}
 }
 

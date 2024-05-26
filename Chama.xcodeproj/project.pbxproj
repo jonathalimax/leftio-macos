@@ -41,7 +41,7 @@
 		16A8CFF22BDFB9E300B6AC07 /* ScreenStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF12BDFB9E300B6AC07 /* ScreenStatusService.swift */; };
 		16A8CFF42BDFC4E200B6AC07 /* MainAppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF32BDFC4E200B6AC07 /* MainAppReducer.swift */; };
 		16A8CFF62BDFD28600B6AC07 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF52BDFD28600B6AC07 /* LogService.swift */; };
-		16A8CFF92BDFD2FE00B6AC07 /* LogHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF82BDFD2FE00B6AC07 /* LogHistory.swift */; };
+		16A8CFF92BDFD2FE00B6AC07 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFF82BDFD2FE00B6AC07 /* Log.swift */; };
 		16B8E0DB2BD2FF6400CA951E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 16B8E0DA2BD2FF6400CA951E /* ComposableArchitecture */; };
 		16EA12732BE7E6C3004030A3 /* ReminderReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA12722BE7E6C3004030A3 /* ReminderReducer.swift */; };
 /* End PBXBuildFile section */
@@ -69,12 +69,14 @@
 		163D2A362BDBD89E00648227 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		1645E17A2BE1C3E300B5EDFC /* Int+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time.swift"; sourceTree = "<group>"; };
 		1659D2072BDE6388001152A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		165DE0472C039D1300CC18B8 /* CubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeView.swift; sourceTree = "<group>"; };
 		166E25162BE30A6000053336 /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKey.swift; sourceTree = "<group>"; };
 		166E251A2BE3112C00053336 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		166E251C2BE5000100053336 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		1671AC6D2BE1F3300061A91C /* EquatableAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableAction.swift; sourceTree = "<group>"; };
 		1671AC702BE2A7320061A91C /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		1671AC722BE2A73A0061A91C /* MenuBarReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarReducer.swift; sourceTree = "<group>"; };
+		1688F14F2BECDFFF00B27365 /* ComposableAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableAction.swift; sourceTree = "<group>"; };
 		16A86E512BE6B2F000F697CE /* AutoStartupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoStartupService.swift; sourceTree = "<group>"; };
 		16A8CFC12BDF1D9500B6AC07 /* chama.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = chama.entitlements; sourceTree = "<group>"; };
 		16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -97,7 +99,7 @@
 		16A8CFF12BDFB9E300B6AC07 /* ScreenStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenStatusService.swift; sourceTree = "<group>"; };
 		16A8CFF32BDFC4E200B6AC07 /* MainAppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppReducer.swift; sourceTree = "<group>"; };
 		16A8CFF52BDFD28600B6AC07 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
-		16A8CFF82BDFD2FE00B6AC07 /* LogHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHistory.swift; sourceTree = "<group>"; };
+		16A8CFF82BDFD2FE00B6AC07 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		16B8E0BC2BD2AFFE00CA951E /* Chama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EA12722BE7E6C3004030A3 /* ReminderReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		165DE0462C039CFC00CC18B8 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				165DE0472C039D1300CC18B8 /* CubeView.swift */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
 		1671AC6C2BE1F3280061A91C /* Equatable */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +177,14 @@
 				16A8CFDA2BDF1F8A00B6AC07 /* MenuBarScene.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		1688F14E2BECDFF100B27365 /* ComposableArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				1688F14F2BECDFFF00B27365 /* ComposableAction.swift */,
+			);
+			path = ComposableArchitecture;
 			sourceTree = "<group>";
 		};
 		16A8CFA22BDF1CD100B6AC07 /* App */ = {
@@ -209,6 +227,7 @@
 		16A8CFD32BDF1E1A00B6AC07 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				165DE0462C039CFC00CC18B8 /* 3D */,
 				16A8CFDC2BDF207A00B6AC07 /* Logs */,
 				16A8CFD42BDF1E1F00B6AC07 /* Main */,
 				16A8CFD72BDF1E7400B6AC07 /* MenuBar */,
@@ -258,6 +277,7 @@
 		16A8CFEA2BDF26A100B6AC07 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1688F14E2BECDFF100B27365 /* ComposableArchitecture */,
 				1671AC6C2BE1F3280061A91C /* Equatable */,
 				1645E1792BE1C3D700B5EDFC /* Extensions */,
 				16A8CFEB2BDF26B100B6AC07 /* Assets */,
@@ -287,7 +307,7 @@
 		16A8CFF72BDFD2F300B6AC07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				16A8CFF82BDFD2FE00B6AC07 /* LogHistory.swift */,
+				16A8CFF82BDFD2FE00B6AC07 /* Log.swift */,
 				166E25162BE30A6000053336 /* StorageKey.swift */,
 			);
 			path = Models;
@@ -448,7 +468,7 @@
 				16A8CFE52BDF228600B6AC07 /* SettingsView.swift in Sources */,
 				1671AC712BE2A7320061A91C /* MenuBarView.swift in Sources */,
 				16A8CFD62BDF1E3B00B6AC07 /* MainApp.swift in Sources */,
-				16A8CFF92BDFD2FE00B6AC07 /* LogHistory.swift in Sources */,
+				16A8CFF92BDFD2FE00B6AC07 /* Log.swift in Sources */,
 				16A86E522BE6B2F000F697CE /* AutoStartupService.swift in Sources */,
 				1645E17B2BE1C3E300B5EDFC /* Int+Time.swift in Sources */,
 				166E251B2BE3112C00053336 /* DateFormatter.swift in Sources */,
@@ -681,6 +701,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lima.jonatha.Chama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -713,6 +735,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lima.jonatha.Chama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -755,8 +779,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
-				branch = "shared-state-beta";
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
 			};
 		};
 		16B8E0E82BD4164600CA951E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
