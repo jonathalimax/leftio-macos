@@ -13,7 +13,7 @@ extension PersistenceReaderKey {
 	/// - Parameter key: The key to read and write the value to in the user defaults store.
 	/// - Returns: A user defaults persistence key.
 	public static func appStorage(_ key: StorageKey) -> Self where Self == AppStorageKey<Int> {
-		AppStorageKey(key.rawValue)
+		.appStorage(key.rawValue)
 	}
 
 	/// Creates a persistence key that can read and write to an optional integer user default.
@@ -21,7 +21,7 @@ extension PersistenceReaderKey {
 	/// - Parameter key: The key to read and write the value to in the user defaults store.
 	/// - Returns: A user defaults persistence key.
 	public static func appStorage(_ key: StorageKey) -> Self where Self == AppStorageKey<Int?> {
-		AppStorageKey(key.rawValue)
+		.appStorage(key.rawValue)
 	}
 
 	/// Creates a persistence key that can read and write to an string user default.
@@ -29,7 +29,7 @@ extension PersistenceReaderKey {
 	/// - Parameter key: The key to read and write the value to in the user defaults store.
 	/// - Returns: A user defaults persistence key.
 	public static func appStorage(_ key: StorageKey) -> Self where Self == AppStorageKey<String> {
-		AppStorageKey(key.rawValue)
+		.appStorage(key.rawValue)
 	}
 
 	/// Creates a persistence key that can read and write to an optional string user default.
@@ -37,7 +37,7 @@ extension PersistenceReaderKey {
 	/// - Parameter key: The key to read and write the value to in the user defaults store.
 	/// - Returns: A user defaults persistence key.
 	public static func appStorage(_ key: StorageKey) -> Self where Self == AppStorageKey<String?> {
-		AppStorageKey(key.rawValue)
+		.appStorage(key.rawValue)
 	}
 
 	/// Creates a persistence key that can read and write to a boolean user default.
@@ -45,7 +45,7 @@ extension PersistenceReaderKey {
 	/// - Parameter key: The key to read and write the value to in the user defaults store.
 	/// - Returns: A user defaults persistence key.
 	public static func appStorage(_ key: StorageKey) -> Self where Self == AppStorageKey<Bool> {
-		AppStorageKey(key.rawValue)
+		.appStorage(key.rawValue)
 	}
 
 	/// Creates a persistence key that can read and write to a optional boolean user default.
@@ -53,7 +53,7 @@ extension PersistenceReaderKey {
 	/// - Parameter key: The key to read and write the value to in the user defaults store.
 	/// - Returns: A user defaults persistence key.
 	public static func appStorage(_ key: StorageKey) -> Self where Self == AppStorageKey<Bool?> {
-		AppStorageKey(key.rawValue)
+		.appStorage(key.rawValue)
 	}
 	
 	/// Creates a persistence key that can read and write to a double user default.
@@ -61,7 +61,7 @@ extension PersistenceReaderKey {
 	/// - Parameter key: The key to read and write the value to in the user defaults store.
 	/// - Returns: A user defaults persistence key.
 	public static func appStorage(_ key: StorageKey) -> Self where Self == AppStorageKey<Double> {
-		AppStorageKey(key.rawValue)
+		.appStorage(key.rawValue)
 	}
 
 	/// Creates a persistence key that can read and write to a optional double user default.
@@ -69,6 +69,6 @@ extension PersistenceReaderKey {
 	/// - Parameter key: The key to read and write the value to in the user defaults store.
 	/// - Returns: A user defaults persistence key.
 	public static func appStorage(_ key: StorageKey) -> Self where Self == AppStorageKey<Double?> {
-		AppStorageKey(key.rawValue)
+		.appStorage(key.rawValue)
 	}
 }

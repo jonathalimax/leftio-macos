@@ -3,8 +3,8 @@ import SwiftData
 
 @Model
 class Log {
-	let action: Action
-	let timestamp: Date
+	var action: Action
+	var timestamp: Date
 
 	init(action: Action, timestamp: Date) {
 		self.action = action

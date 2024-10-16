@@ -1,5 +1,4 @@
 import ComposableArchitecture
-import Lottie
 import SwiftUI
 
 struct MenuBarView: View {
@@ -30,13 +29,6 @@ struct MenuBarView: View {
 						.frame(width: 28, height: 28)
 				}
 			}
-
-			LottieView(animation: .named(store.animation))
-				.playing(loopMode: store.loopMode)
-				.animationDidFinish { _ in store.send(.animationFinished) }
-				.resizable()
-				.aspectRatio(contentMode: .fit)
-				.frame(maxWidth: .infinity)
 		}
 		.padding([.horizontal, .top])
 	}

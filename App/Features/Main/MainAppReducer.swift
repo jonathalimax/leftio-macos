@@ -84,6 +84,7 @@ struct MainAppReducer {
 		state.menuBar = .init(remainingTime: state.$remainingTime)
 
 		return .merge(
+			.run { send in },
 			persistLog(.start),
 			listenScreenStatus(),
 			fireTimer(&state),
