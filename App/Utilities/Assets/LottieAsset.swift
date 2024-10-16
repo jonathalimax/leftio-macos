@@ -1,13 +1,8 @@
 import Lottie
 
 enum LottieAsset: String {
-	case clockTime
-	case hello
-	case night
-	case notFound
 	case working
 	case closingComputer
-	case computer
 }
 
 extension LottieAnimation {
