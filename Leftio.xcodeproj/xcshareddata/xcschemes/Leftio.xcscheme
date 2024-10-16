@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "16B8E0BB2BD2AFFE00CA951E"
-               BuildableName = "Chama.app"
-               BlueprintName = "Chama"
-               ReferencedContainer = "container:Chama.xcodeproj">
+               BuildableName = "Leftio.app"
+               BlueprintName = "Leftio"
+               ReferencedContainer = "container:Leftio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16B8E0BB2BD2AFFE00CA951E"
-            BuildableName = "Chama.app"
-            BlueprintName = "Chama"
-            ReferencedContainer = "container:Chama.xcodeproj">
+            BuildableName = "Leftio.app"
+            BlueprintName = "Leftio"
+            ReferencedContainer = "container:Leftio.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "16B8E0BB2BD2AFFE00CA951E"
-            BuildableName = "Chama.app"
-            BlueprintName = "Chama"
-            ReferencedContainer = "container:Chama.xcodeproj">
+            BuildableName = "Leftio.app"
+            BlueprintName = "Leftio"
+            ReferencedContainer = "container:Leftio.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

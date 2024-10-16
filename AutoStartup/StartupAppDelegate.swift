@@ -7,7 +7,7 @@ class StartupAppDelegate: NSObject, NSApplicationDelegate {
 
 	private func startMainApp() {
 		let runningApps = NSWorkspace.shared.runningApplications
-		let isRunning = runningApps.contains(where: { $0.bundleIdentifier == "com.lima.jonatha.Chama" })
+		let isRunning = runningApps.contains(where: { $0.bundleIdentifier == "com.lima.leftio" })
 
 		if !isRunning {
 			var path = Bundle.main.bundlePath

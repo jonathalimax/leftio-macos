@@ -22,12 +22,7 @@
 		16A86E522BE6B2F000F697CE /* AutoStartupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A86E512BE6B2F000F697CE /* AutoStartupService.swift */; };
 		16A8CFC42BDF1DCB00B6AC07 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */; };
 		16A8CFC72BDF1DEA00B6AC07 /* closingComputer.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */; };
-		16A8CFC82BDF1DEA00B6AC07 /* computer.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC62BDF1DEA00B6AC07 /* computer.json */; };
-		16A8CFCE2BDF1DFC00B6AC07 /* clockTime.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFC92BDF1DFC00B6AC07 /* clockTime.json */; };
 		16A8CFCF2BDF1DFC00B6AC07 /* working.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFCA2BDF1DFC00B6AC07 /* working.json */; };
-		16A8CFD02BDF1DFC00B6AC07 /* night.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFCB2BDF1DFC00B6AC07 /* night.json */; };
-		16A8CFD12BDF1DFC00B6AC07 /* notFound.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFCC2BDF1DFC00B6AC07 /* notFound.json */; };
-		16A8CFD22BDF1DFC00B6AC07 /* hello.json in Resources */ = {isa = PBXBuildFile; fileRef = 16A8CFCD2BDF1DFC00B6AC07 /* hello.json */; };
 		16A8CFD62BDF1E3B00B6AC07 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFD52BDF1E3B00B6AC07 /* MainApp.swift */; };
 		16A8CFD92BDF1E9500B6AC07 /* MenuBarSceneReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFD82BDF1E9500B6AC07 /* MenuBarSceneReducer.swift */; };
 		16A8CFDB2BDF1F8A00B6AC07 /* MenuBarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8CFDA2BDF1F8A00B6AC07 /* MenuBarScene.swift */; };
@@ -60,7 +55,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		161FA29F2BDEAE3200AB738A /* AppKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppKit; sourceTree = "<group>"; };
 		163D2A202BDBD2A300648227 /* AutoStartup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoStartup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		163D2A262BDBD2A400648227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163D2A2B2BDBD2A400648227 /* AutoStartup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoStartup.entitlements; sourceTree = "<group>"; };
@@ -68,25 +62,17 @@
 		163D2A312BDBD77700648227 /* StartupAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupAppDelegate.swift; sourceTree = "<group>"; };
 		163D2A362BDBD89E00648227 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		1645E17A2BE1C3E300B5EDFC /* Int+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Time.swift"; sourceTree = "<group>"; };
-		1659D2072BDE6388001152A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		165DE0472C039D1300CC18B8 /* CubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeView.swift; sourceTree = "<group>"; };
 		166E25162BE30A6000053336 /* StorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageKey.swift; sourceTree = "<group>"; };
 		166E251A2BE3112C00053336 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		166E251C2BE5000100053336 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		1671AC6D2BE1F3300061A91C /* EquatableAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableAction.swift; sourceTree = "<group>"; };
 		1671AC702BE2A7320061A91C /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		1671AC722BE2A73A0061A91C /* MenuBarReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarReducer.swift; sourceTree = "<group>"; };
-		1688F14F2BECDFFF00B27365 /* ComposableAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableAction.swift; sourceTree = "<group>"; };
 		16A86E512BE6B2F000F697CE /* AutoStartupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoStartupService.swift; sourceTree = "<group>"; };
-		16A8CFC12BDF1D9500B6AC07 /* chama.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = chama.entitlements; sourceTree = "<group>"; };
+		16A8CFC12BDF1D9500B6AC07 /* leftio.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = leftio.entitlements; sourceTree = "<group>"; };
 		16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = closingComputer.json; sourceTree = "<group>"; };
-		16A8CFC62BDF1DEA00B6AC07 /* computer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = computer.json; sourceTree = "<group>"; };
-		16A8CFC92BDF1DFC00B6AC07 /* clockTime.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clockTime.json; sourceTree = "<group>"; };
 		16A8CFCA2BDF1DFC00B6AC07 /* working.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = working.json; sourceTree = "<group>"; };
-		16A8CFCB2BDF1DFC00B6AC07 /* night.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night.json; sourceTree = "<group>"; };
-		16A8CFCC2BDF1DFC00B6AC07 /* notFound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notFound.json; sourceTree = "<group>"; };
-		16A8CFCD2BDF1DFC00B6AC07 /* hello.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hello.json; sourceTree = "<group>"; };
 		16A8CFD52BDF1E3B00B6AC07 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 		16A8CFD82BDF1E9500B6AC07 /* MenuBarSceneReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarSceneReducer.swift; sourceTree = "<group>"; };
 		16A8CFDA2BDF1F8A00B6AC07 /* MenuBarScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarScene.swift; sourceTree = "<group>"; };
@@ -100,7 +86,7 @@
 		16A8CFF32BDFC4E200B6AC07 /* MainAppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppReducer.swift; sourceTree = "<group>"; };
 		16A8CFF52BDFD28600B6AC07 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
 		16A8CFF82BDFD2FE00B6AC07 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		16B8E0BC2BD2AFFE00CA951E /* Chama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B8E0BC2BD2AFFE00CA951E /* Leftio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leftio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16EA12722BE7E6C3004030A3 /* ReminderReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +114,6 @@
 		163D2A212BDBD2A300648227 /* AutoStartup */ = {
 			isa = PBXGroup;
 			children = (
-				1659D2072BDE6388001152A7 /* Info.plist */,
 				163D2A262BDBD2A400648227 /* Assets.xcassets */,
 				163D2A2B2BDBD2A400648227 /* AutoStartup.entitlements */,
 				163D2A2F2BDBD75D00648227 /* main.swift */,
@@ -154,22 +139,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		165DE0462C039CFC00CC18B8 /* 3D */ = {
-			isa = PBXGroup;
-			children = (
-				165DE0472C039D1300CC18B8 /* CubeView.swift */,
-			);
-			path = 3D;
-			sourceTree = "<group>";
-		};
-		1671AC6C2BE1F3280061A91C /* Equatable */ = {
-			isa = PBXGroup;
-			children = (
-				1671AC6D2BE1F3300061A91C /* EquatableAction.swift */,
-			);
-			path = Equatable;
-			sourceTree = "<group>";
-		};
 		1671AC6F2BE2A7230061A91C /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,14 +146,6 @@
 				16A8CFDA2BDF1F8A00B6AC07 /* MenuBarScene.swift */,
 			);
 			path = Scene;
-			sourceTree = "<group>";
-		};
-		1688F14E2BECDFF100B27365 /* ComposableArchitecture */ = {
-			isa = PBXGroup;
-			children = (
-				1688F14F2BECDFFF00B27365 /* ComposableAction.swift */,
-			);
-			path = ComposableArchitecture;
 			sourceTree = "<group>";
 		};
 		16A8CFA22BDF1CD100B6AC07 /* App */ = {
@@ -203,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				16A8CFC22BDF1DAA00B6AC07 /* Lottie */,
-				16A8CFC12BDF1D9500B6AC07 /* chama.entitlements */,
+				16A8CFC12BDF1D9500B6AC07 /* leftio.entitlements */,
 				16A8CFC32BDF1DCB00B6AC07 /* Media.xcassets */,
 				166E251C2BE5000100053336 /* Color.xcassets */,
 			);
@@ -213,13 +174,8 @@
 		16A8CFC22BDF1DAA00B6AC07 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				16A8CFC92BDF1DFC00B6AC07 /* clockTime.json */,
-				16A8CFCD2BDF1DFC00B6AC07 /* hello.json */,
-				16A8CFCB2BDF1DFC00B6AC07 /* night.json */,
-				16A8CFCC2BDF1DFC00B6AC07 /* notFound.json */,
 				16A8CFCA2BDF1DFC00B6AC07 /* working.json */,
 				16A8CFC52BDF1DEA00B6AC07 /* closingComputer.json */,
-				16A8CFC62BDF1DEA00B6AC07 /* computer.json */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -227,7 +183,6 @@
 		16A8CFD32BDF1E1A00B6AC07 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				165DE0462C039CFC00CC18B8 /* 3D */,
 				16A8CFDC2BDF207A00B6AC07 /* Logs */,
 				16A8CFD42BDF1E1F00B6AC07 /* Main */,
 				16A8CFD72BDF1E7400B6AC07 /* MenuBar */,
@@ -277,8 +232,7 @@
 		16A8CFEA2BDF26A100B6AC07 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				1688F14E2BECDFF100B27365 /* ComposableArchitecture */,
-				1671AC6C2BE1F3280061A91C /* Equatable */,
+				1671AC6D2BE1F3300061A91C /* EquatableAction.swift */,
 				1645E1792BE1C3D700B5EDFC /* Extensions */,
 				16A8CFEB2BDF26B100B6AC07 /* Assets */,
 			);
@@ -316,7 +270,6 @@
 		16B8E0B32BD2AFFE00CA951E = {
 			isa = PBXGroup;
 			children = (
-				161FA29F2BDEAE3200AB738A /* AppKit */,
 				16A8CFA22BDF1CD100B6AC07 /* App */,
 				163D2A212BDBD2A300648227 /* AutoStartup */,
 				163D2A352BDBD89D00648227 /* Frameworks */,
@@ -327,7 +280,7 @@
 		16B8E0BD2BD2AFFE00CA951E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				16B8E0BC2BD2AFFE00CA951E /* Chama.app */,
+				16B8E0BC2BD2AFFE00CA951E /* Leftio.app */,
 				163D2A202BDBD2A300648227 /* AutoStartup.app */,
 			);
 			name = Products;
@@ -361,9 +314,9 @@
 			productReference = 163D2A202BDBD2A300648227 /* AutoStartup.app */;
 			productType = "com.apple.product-type.application";
 		};
-		16B8E0BB2BD2AFFE00CA951E /* Chama */ = {
+		16B8E0BB2BD2AFFE00CA951E /* Leftio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16B8E0CD2BD2B00000CA951E /* Build configuration list for PBXNativeTarget "Chama" */;
+			buildConfigurationList = 16B8E0CD2BD2B00000CA951E /* Build configuration list for PBXNativeTarget "Leftio" */;
 			buildPhases = (
 				16B8E0B82BD2AFFE00CA951E /* Sources */,
 				16B8E0B92BD2AFFE00CA951E /* Frameworks */,
@@ -374,13 +327,13 @@
 			);
 			dependencies = (
 			);
-			name = Chama;
+			name = Leftio;
 			packageProductDependencies = (
 				16B8E0DA2BD2FF6400CA951E /* ComposableArchitecture */,
 				16A8CFDE2BDF20BE00B6AC07 /* Lottie */,
 			);
 			productName = Chama;
-			productReference = 16B8E0BC2BD2AFFE00CA951E /* Chama.app */;
+			productReference = 16B8E0BC2BD2AFFE00CA951E /* Leftio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -401,7 +354,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 16B8E0B72BD2AFFE00CA951E /* Build configuration list for PBXProject "Chama" */;
+			buildConfigurationList = 16B8E0B72BD2AFFE00CA951E /* Build configuration list for PBXProject "Leftio" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -418,7 +371,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16B8E0BB2BD2AFFE00CA951E /* Chama */,
+				16B8E0BB2BD2AFFE00CA951E /* Leftio */,
 				163D2A1F2BDBD2A300648227 /* AutoStartup */,
 			);
 		};
@@ -437,14 +390,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A8CFD22BDF1DFC00B6AC07 /* hello.json in Resources */,
-				16A8CFC82BDF1DEA00B6AC07 /* computer.json in Resources */,
 				16A8CFC72BDF1DEA00B6AC07 /* closingComputer.json in Resources */,
-				16A8CFD02BDF1DFC00B6AC07 /* night.json in Resources */,
 				16A8CFC42BDF1DCB00B6AC07 /* Media.xcassets in Resources */,
 				16A8CFCF2BDF1DFC00B6AC07 /* working.json in Resources */,
-				16A8CFCE2BDF1DFC00B6AC07 /* clockTime.json in Resources */,
-				16A8CFD12BDF1DFC00B6AC07 /* notFound.json in Resources */,
 				166E251D2BE5000100053336 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AutoStartup/AutoStartup.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -507,7 +456,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AutoStartup/Info.plist;
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -517,7 +465,7 @@
 				MARKETING_VERSION = 1.0;
 				OPENAI_KEY = "<sk-proj-IYzlPu7WMI4OiKW4t3PIT3BlbkFJFK24Ld3wTSgJuw8ohDcf>";
 				OPENAI_URL = "https://api.openai.com/v1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lima.jonatha.AutoStartup;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lima.leftio.auto-startup";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -531,6 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AutoStartup/AutoStartup.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -540,7 +489,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AutoStartup/Info.plist;
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -550,7 +498,7 @@
 				MARKETING_VERSION = 1.0;
 				OPENAI_KEY = "<sk-proj-IYzlPu7WMI4OiKW4t3PIT3BlbkFJFK24Ld3wTSgJuw8ohDcf>";
 				OPENAI_URL = "https://api.openai.com/v1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lima.jonatha.AutoStartup;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lima.leftio.auto-startup";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -683,8 +631,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = App/Resources/Chama.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = App/Resources/leftio.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -704,7 +652,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lima.jonatha.Chama;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lima.leftio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
@@ -718,8 +666,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = App/Resources/Chama.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = App/Resources/leftio.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -739,7 +687,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lima.jonatha.Chama;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lima.leftio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = macosx;
 				SUPPORTS_MACCATALYST = NO;
@@ -760,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16B8E0B72BD2AFFE00CA951E /* Build configuration list for PBXProject "Chama" */ = {
+		16B8E0B72BD2AFFE00CA951E /* Build configuration list for PBXProject "Leftio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16B8E0CB2BD2B00000CA951E /* Debug */,
@@ -769,7 +717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16B8E0CD2BD2B00000CA951E /* Build configuration list for PBXNativeTarget "Chama" */ = {
+		16B8E0CD2BD2B00000CA951E /* Build configuration list for PBXNativeTarget "Leftio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16B8E0CE2BD2B00000CA951E /* Debug */,
